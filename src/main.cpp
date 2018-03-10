@@ -1,7 +1,8 @@
 #include "../include/header.h"
 // Driver function.
+
 int main(){
-    int* (*fp_array[])(int*, int*, int*, int) = {linear_s_i, binary_s_i, binary_s_r, ternary_s_i, ternary_s_r};
+    int* (*fp_array[])(int*, int*, int*, int) = {linear_s_i, binary_s_i, binary_s_r, ternary_s_i, ternary_s_r, jump_s};
     int A[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }; // Data container.
     int targets[] = { 0,1, 2, 3, 4, 5, 6, 7, 8, 9 , 10,-4, 59,-6}; // Target values for testing.
 
@@ -11,12 +12,11 @@ int main(){
     std::cout << "]\n";
 
     // Executes several searchs in the data container.
-    for(int i=0; i<5; i++){ 
+    for(int i=0; i<5; i++){
         std::cout<< ">> RUNING FUNCTION "<< i <<std::endl;
         for( const auto & e : targets ){
             // Look for target in the entire range.
             auto result = (*fp_array[i])(std::begin(A), std::end(A), std::end(A), e );
-
             // Process the result
             if ( result != std::end(A) )
             {

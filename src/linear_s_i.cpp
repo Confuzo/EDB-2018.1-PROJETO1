@@ -15,5 +15,5 @@ int * linear_s_i( int *first, int *last, int * abs_last, int value )
             first++;
         }
     }
-    return last; // STUB
+    return abs_last; // STUB
 }
