@@ -3,7 +3,7 @@
 PROG = funcionEAnalizer
 CC = g++
 CPPFLAGS = -O0 -g -W -Wall -std=c++11 -pedantic
-OBJS = main.o linear_s_i.o binary_s_i.o binary_s_r.o ternary_s_i.o ternary_s_r.o
+OBJS = main.o linear_s_i.o binary_s_i.o binary_s_r.o ternary_s_i.o ternary_s_r.o jump_s.o fibonacci_s.o
 HEADER = ./include/header.h
 SRC_DIR     = ./src/
 BIN_DIR     = ./bin/
@@ -30,5 +30,11 @@ ternary_s_i.o: $(HEADER)
 ternary_s_r.o: $(HEADER)
 	$(CC) $(CPPFLAGS) -c $(SRC_DIR)ternary_s_r.cpp
 	
+jump_s.o: $(HEADER)
+	$(CC) $(CPPFLAGS) -c $(SRC_DIR)jump_s.cpp
+
+fibonacci_s.o: $(HEADER)
+	$(CC) $(CPPFLAGS) -c $(SRC_DIR)fibonacci_s.cpp
+
 clean:
 	rm -f $(BIN_DIR)*.o $(PROG)
