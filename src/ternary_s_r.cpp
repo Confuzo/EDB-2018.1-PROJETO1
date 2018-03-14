@@ -31,4 +31,5 @@ int *ternary_s_r(int * first, int * last, int * abs_last ,int value){
     }
 
   }
+  return abs_last;
 }

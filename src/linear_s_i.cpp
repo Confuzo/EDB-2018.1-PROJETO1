@@ -8,7 +8,7 @@
  */
 int * linear_s_i( int *first, int *last, int * abs_last, int value )
 {
-    while(*first != *last){
+    while(first != last){
         if(*first == value){
             return first;
         }else{
