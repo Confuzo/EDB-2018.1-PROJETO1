@@ -4,6 +4,7 @@
 #include <iterator>  // ostream_iterator, begin(), end()
 #include <vector> // vetor propriets
 #include <cmath>
+#include <cstdlib> 
 
 int *linear_s_i( int *first, int *last, int *abs_last, int value ); /**< busca linear iterativa*/ 
 int *binary_s_i( int *first, int *last, int *abs_last, int value ); /**< busca binária iterativa*/ 
