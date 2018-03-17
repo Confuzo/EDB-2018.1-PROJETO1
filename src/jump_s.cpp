@@ -1,12 +1,11 @@
 #include "../include/header.h"
 
-/// Implements a jump search on an array of integers.
+/**<@title Implementa uma busca de saltos em um vetor de números inteiros.*/
 /*!
- * \param first Pointer to the first element in the range.
- * \param last Pointer past the last valid element in the range.
- * \param value The target value we are looking for within the range.
- * \return A pointer to the target value within the range; or last, in case the value is not in the range.
- */
+ *@param primeiro Ponteiro para o primeiro elemento no intervalo.
+ *@param último Ponteiro após o último elemento válido no intervalo.
+ *@param value O valor alvo que procuramos dentro do intervalo.
+ *@return Um ponteiro para o valor alvo dentro do intervalo; ou o último, caso o valor não esteja no intervalo.*/
 
  int *jump_s(int *first, int *last,  int *abs_last, int value){
 

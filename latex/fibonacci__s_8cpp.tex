@@ -1,0 +1,40 @@
+\hypertarget{fibonacci__s_8cpp}{}\section{src/fibonacci\+\_\+s.cpp File Reference}
+\label{fibonacci__s_8cpp}\index{src/fibonacci\+\_\+s.\+cpp@{src/fibonacci\+\_\+s.\+cpp}}
+{\ttfamily \#include \char`\"{}../include/header.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{fibonacci__s_8cpp_a1eb6678c774ea03687c823b02fa64203}{menor}} (int num1, int num2)
+\item 
+int $\ast$ \mbox{\hyperlink{fibonacci__s_8cpp_a42e922ad881902451edb505bb837f331}{fibonacci\+\_\+s}} (int $\ast$first, int $\ast$last, int $\ast$abs\+\_\+last, int value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{fibonacci__s_8cpp_a42e922ad881902451edb505bb837f331}\label{fibonacci__s_8cpp_a42e922ad881902451edb505bb837f331}} 
+\index{fibonacci\+\_\+s.\+cpp@{fibonacci\+\_\+s.\+cpp}!fibonacci\+\_\+s@{fibonacci\+\_\+s}}
+\index{fibonacci\+\_\+s@{fibonacci\+\_\+s}!fibonacci\+\_\+s.\+cpp@{fibonacci\+\_\+s.\+cpp}}
+\subsubsection{\texorpdfstring{fibonacci\+\_\+s()}{fibonacci\_s()}}
+{\footnotesize\ttfamily int$\ast$ fibonacci\+\_\+s (\begin{DoxyParamCaption}\item[{int $\ast$}]{first,  }\item[{int $\ast$}]{last,  }\item[{int $\ast$}]{abs\+\_\+last,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+ $\ast$
+\begin{DoxyParams}{Parameters}
+{\em primeiro} & Ponteiro para o primeiro elemento no intervalo.  $\ast$\\
+\hline
+{\em último} & Ponteiro após o último elemento válido no intervalo.  $\ast$\\
+\hline
+{\em value} & O valor alvo que procuramos dentro do intervalo.  $\ast$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um ponteiro para o valor alvo dentro do intervalo; ou o último, caso o valor não esteja no intervalo. 
+\end{DoxyReturn}
+$<$inicia os números de fibonacci até o maior número ser menor que o tamanho do array.
+
+$<$ seta o endereço de memória de first mais menor entre o menor valor dos três números de fibonacci -\/1 e o lenght da matriz -\/1. \mbox{\Hypertarget{fibonacci__s_8cpp_a1eb6678c774ea03687c823b02fa64203}\label{fibonacci__s_8cpp_a1eb6678c774ea03687c823b02fa64203}} 
+\index{fibonacci\+\_\+s.\+cpp@{fibonacci\+\_\+s.\+cpp}!menor@{menor}}
+\index{menor@{menor}!fibonacci\+\_\+s.\+cpp@{fibonacci\+\_\+s.\+cpp}}
+\subsubsection{\texorpdfstring{menor()}{menor()}}
+{\footnotesize\ttfamily int menor (\begin{DoxyParamCaption}\item[{int}]{num1,  }\item[{int}]{num2 }\end{DoxyParamCaption})}
+
+$<$função auxiliar que calcula o menor entre dois números  Implementa uma busca de fibonacci em um vetor de números inteiros. 

@@ -1,5 +1,5 @@
 #include "../include/header.h"
-/**< função auxiliar que calcula o menor entre dois números */
+/**<função auxiliar que calcula o menor entre dois números*/
 int menor(int num1, int num2){
         if(num1 < num2){
           return num1;
@@ -7,14 +7,12 @@ int menor(int num1, int num2){
           return num2;
         }
 }
-/// Implements a fibonacci search on an array of integers.
+/**<@title Implementa uma busca de fibonacci em um vetor de números inteiros.*/
 /*!
- * \@param first Pointer to the first element in the range.
- * \@param last Pointer past the last valid element in the range.
- * \@param last Pointer past the last valid element in the range.
- * \@param value The target value we are looking for within the range.
- * \return A pointer to the target value within the range; or last, in case the value is not in the range.
- */
+ *@param primeiro Ponteiro para o primeiro elemento no intervalo.
+ *@param último Ponteiro após o último elemento válido no intervalo.
+ *@param value O valor alvo que procuramos dentro do intervalo.
+ *@return Um ponteiro para o valor alvo dentro do intervalo; ou o último, caso o valor não esteja no intervalo.*/
 int *fibonacci_s(int *first, int *last,  int *abs_last, int value){
         auto lenght = (last - first);
         int fmin2 = 0;
@@ -23,16 +21,16 @@ int *fibonacci_s(int *first, int *last,  int *abs_last, int value){
         int offset = -1;
         auto i = (first);
         
-        /**<inicia os números de fibonacci até o maior número ser menor que o tamanho do array*/ 
+        /**<inicia os números de fibonacci até o maior número ser menor que o tamanho do array.*/ 
         while(fmin < lenght){
                 fmin2 = fmin1;
                 fmin1 = fmin;
                 fmin = fmin1 + fmin2; 
         }
-        /**< inicia a procura do valor enquanto o número de fibonacci seja maior que 1*/ 
+        /**<inicia a procura do valor enquanto o número de fibonacci seja maior que 1.*/ 
         while(fmin > 1){
                 /**< seta o endereço de memória de first mais menor entre o menor valor dos três 
-                 * números de fibonacci -1 e o lenght da matriz -1*/ 
+                 *números de fibonacci -1 e o lenght da matriz -1.*/ 
                 i = (first + menor(offset+fmin2, lenght-1));    
                 if(*i == value){
                         return i;

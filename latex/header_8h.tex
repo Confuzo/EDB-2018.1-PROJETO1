@@ -1,0 +1,205 @@
+\hypertarget{header_8h}{}\section{include/header.h File Reference}
+\label{header_8h}\index{include/header.\+h@{include/header.\+h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{header_8h_a383d5e14413e39bc8997c9f4edbe05d4}{header}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{header_8h_a8f4cd8b77a07a0f8591a631335a39400}{linear\+\_\+s\+\_\+i}} (int $\ast$first, int $\ast$last, int $\ast$abs\+\_\+last, int value)
+\item 
+int $\ast$ \mbox{\hyperlink{header_8h_a272b2b246c82c890ac088cefb2dfdd89}{binary\+\_\+s\+\_\+i}} (int $\ast$first, int $\ast$last, int $\ast$abs\+\_\+last, int value)
+\item 
+int $\ast$ \mbox{\hyperlink{header_8h_a21832189d20af8722bba917795dbb921}{binary\+\_\+s\+\_\+r}} (int $\ast$first, int $\ast$last, int $\ast$abs\+\_\+last, int value)
+\item 
+int $\ast$ \mbox{\hyperlink{header_8h_a687ce0c5824d71fba5cb6782fea77358}{ternary\+\_\+s\+\_\+i}} (int $\ast$first, int $\ast$last, int $\ast$abs\+\_\+last, int value)
+\item 
+int $\ast$ \mbox{\hyperlink{header_8h_a2424887c4d32e9f4566b30625009d4c5}{ternary\+\_\+s\+\_\+r}} (int $\ast$first, int $\ast$last, int $\ast$abs\+\_\+last, int value)
+\item 
+int $\ast$ \mbox{\hyperlink{header_8h_a08ec42b98c981f7b7fcf84e5f210957a}{jump\+\_\+s}} (int $\ast$first, int $\ast$last, int $\ast$abs\+\_\+last, int value)
+\item 
+int $\ast$ \mbox{\hyperlink{header_8h_a42e922ad881902451edb505bb837f331}{fibonacci\+\_\+s}} (int $\ast$first, int $\ast$last, int $\ast$abs\+\_\+last, int value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{header_8h_a383d5e14413e39bc8997c9f4edbe05d4}\label{header_8h_a383d5e14413e39bc8997c9f4edbe05d4}} 
+\index{header.\+h@{header.\+h}!header@{header}}
+\index{header@{header}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily \#define header}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{header_8h_a272b2b246c82c890ac088cefb2dfdd89}\label{header_8h_a272b2b246c82c890ac088cefb2dfdd89}} 
+\index{header.\+h@{header.\+h}!binary\+\_\+s\+\_\+i@{binary\+\_\+s\+\_\+i}}
+\index{binary\+\_\+s\+\_\+i@{binary\+\_\+s\+\_\+i}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{binary\+\_\+s\+\_\+i()}{binary\_s\_i()}}
+{\footnotesize\ttfamily int$\ast$ binary\+\_\+s\+\_\+i (\begin{DoxyParamCaption}\item[{int $\ast$}]{first,  }\item[{int $\ast$}]{last,  }\item[{int $\ast$}]{abs\+\_\+last,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Busca binária iterativa.
+
+$<$ Implementa uma busca binária interativa em uma matriz de números inteiros.
+
+~\newline
+ $\ast$
+\begin{DoxyParams}{Parameters}
+{\em primeiro} & Ponteiro para o primeiro elemento no intervalo.  $\ast$\\
+\hline
+{\em último} & Ponteiro após o último elemento válido no intervalo.  $\ast$\\
+\hline
+{\em value} & O valor alvo que procuramos dentro do intervalo.  $\ast$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um ponteiro para o valor alvo dentro do intervalo; ou o último, caso o valor não esteja no intervalo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{header_8h_a21832189d20af8722bba917795dbb921}\label{header_8h_a21832189d20af8722bba917795dbb921}} 
+\index{header.\+h@{header.\+h}!binary\+\_\+s\+\_\+r@{binary\+\_\+s\+\_\+r}}
+\index{binary\+\_\+s\+\_\+r@{binary\+\_\+s\+\_\+r}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{binary\+\_\+s\+\_\+r()}{binary\_s\_r()}}
+{\footnotesize\ttfamily int$\ast$ binary\+\_\+s\+\_\+r (\begin{DoxyParamCaption}\item[{int $\ast$}]{first,  }\item[{int $\ast$}]{last,  }\item[{int $\ast$}]{abs\+\_\+last,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Busca binária recursiva.
+
+$<$ Implementa uma busca binária recursiva em uma matriz de números inteiros.
+
+~\newline
+ $\ast$
+\begin{DoxyParams}{Parameters}
+{\em primeiro} & Ponteiro para o primeiro elemento no intervalo.  $\ast$\\
+\hline
+{\em último} & Ponteiro após o último elemento válido no intervalo.  $\ast$\\
+\hline
+{\em value} & O valor alvo que procuramos dentro do intervalo.  $\ast$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um ponteiro para o valor alvo dentro do intervalo; ou o último, caso o valor não esteja no intervalo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{header_8h_a42e922ad881902451edb505bb837f331}\label{header_8h_a42e922ad881902451edb505bb837f331}} 
+\index{header.\+h@{header.\+h}!fibonacci\+\_\+s@{fibonacci\+\_\+s}}
+\index{fibonacci\+\_\+s@{fibonacci\+\_\+s}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{fibonacci\+\_\+s()}{fibonacci\_s()}}
+{\footnotesize\ttfamily int$\ast$ fibonacci\+\_\+s (\begin{DoxyParamCaption}\item[{int $\ast$}]{first,  }\item[{int $\ast$}]{last,  }\item[{int $\ast$}]{abs\+\_\+last,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Busca por método de fibonacci.
+
+ $\ast$
+\begin{DoxyParams}{Parameters}
+{\em primeiro} & Ponteiro para o primeiro elemento no intervalo.  $\ast$\\
+\hline
+{\em último} & Ponteiro após o último elemento válido no intervalo.  $\ast$\\
+\hline
+{\em value} & O valor alvo que procuramos dentro do intervalo.  $\ast$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um ponteiro para o valor alvo dentro do intervalo; ou o último, caso o valor não esteja no intervalo. 
+\end{DoxyReturn}
+$<$inicia os números de fibonacci até o maior número ser menor que o tamanho do array.
+
+$<$ seta o endereço de memória de first mais menor entre o menor valor dos três números de fibonacci -\/1 e o lenght da matriz -\/1. \mbox{\Hypertarget{header_8h_a08ec42b98c981f7b7fcf84e5f210957a}\label{header_8h_a08ec42b98c981f7b7fcf84e5f210957a}} 
+\index{header.\+h@{header.\+h}!jump\+\_\+s@{jump\+\_\+s}}
+\index{jump\+\_\+s@{jump\+\_\+s}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{jump\+\_\+s()}{jump\_s()}}
+{\footnotesize\ttfamily int$\ast$ jump\+\_\+s (\begin{DoxyParamCaption}\item[{int $\ast$}]{first,  }\item[{int $\ast$}]{last,  }\item[{int $\ast$}]{abs\+\_\+last,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Busca por saltos.
+
+$<$ Implementa uma busca de saltos em um vetor de números inteiros.
+
+~\newline
+ $\ast$
+\begin{DoxyParams}{Parameters}
+{\em primeiro} & Ponteiro para o primeiro elemento no intervalo.  $\ast$\\
+\hline
+{\em último} & Ponteiro após o último elemento válido no intervalo.  $\ast$\\
+\hline
+{\em value} & O valor alvo que procuramos dentro do intervalo.  $\ast$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um ponteiro para o valor alvo dentro do intervalo; ou o último, caso o valor não esteja no intervalo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{header_8h_a8f4cd8b77a07a0f8591a631335a39400}\label{header_8h_a8f4cd8b77a07a0f8591a631335a39400}} 
+\index{header.\+h@{header.\+h}!linear\+\_\+s\+\_\+i@{linear\+\_\+s\+\_\+i}}
+\index{linear\+\_\+s\+\_\+i@{linear\+\_\+s\+\_\+i}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{linear\+\_\+s\+\_\+i()}{linear\_s\_i()}}
+{\footnotesize\ttfamily int$\ast$ linear\+\_\+s\+\_\+i (\begin{DoxyParamCaption}\item[{int $\ast$}]{first,  }\item[{int $\ast$}]{last,  }\item[{int $\ast$}]{abs\+\_\+last,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Busca linear iterativa.
+
+$<$ Implementa uma busca linear em um vetor de números inteiros.
+
+~\newline
+ $\ast$
+\begin{DoxyParams}{Parameters}
+{\em primeiro} & Ponteiro para o primeiro elemento no intervalo.  $\ast$\\
+\hline
+{\em último} & Ponteiro após o último elemento válido no intervalo.  $\ast$\\
+\hline
+{\em value} & O valor alvo que procuramos dentro do intervalo.  $\ast$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um ponteiro para o valor alvo dentro do intervalo; ou o último, caso o valor não esteja no intervalo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{header_8h_a687ce0c5824d71fba5cb6782fea77358}\label{header_8h_a687ce0c5824d71fba5cb6782fea77358}} 
+\index{header.\+h@{header.\+h}!ternary\+\_\+s\+\_\+i@{ternary\+\_\+s\+\_\+i}}
+\index{ternary\+\_\+s\+\_\+i@{ternary\+\_\+s\+\_\+i}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{ternary\+\_\+s\+\_\+i()}{ternary\_s\_i()}}
+{\footnotesize\ttfamily int$\ast$ ternary\+\_\+s\+\_\+i (\begin{DoxyParamCaption}\item[{int $\ast$}]{first,  }\item[{int $\ast$}]{last,  }\item[{int $\ast$}]{abs\+\_\+last,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Busca ternária iterativa.
+
+$<$ Implementa uma busca ternária iterativa em um vetor de números inteiros.
+
+~\newline
+ $\ast$
+\begin{DoxyParams}{Parameters}
+{\em primeiro} & Ponteiro para o primeiro elemento no intervalo.  $\ast$\\
+\hline
+{\em último} & Ponteiro após o último elemento válido no intervalo.  $\ast$\\
+\hline
+{\em value} & O valor alvo que procuramos dentro do intervalo.  $\ast$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um ponteiro para o valor alvo dentro do intervalo; ou o último, caso o valor não esteja no intervalo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{header_8h_a2424887c4d32e9f4566b30625009d4c5}\label{header_8h_a2424887c4d32e9f4566b30625009d4c5}} 
+\index{header.\+h@{header.\+h}!ternary\+\_\+s\+\_\+r@{ternary\+\_\+s\+\_\+r}}
+\index{ternary\+\_\+s\+\_\+r@{ternary\+\_\+s\+\_\+r}!header.\+h@{header.\+h}}
+\subsubsection{\texorpdfstring{ternary\+\_\+s\+\_\+r()}{ternary\_s\_r()}}
+{\footnotesize\ttfamily int$\ast$ ternary\+\_\+s\+\_\+r (\begin{DoxyParamCaption}\item[{int $\ast$}]{first,  }\item[{int $\ast$}]{last,  }\item[{int $\ast$}]{abs\+\_\+last,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Busca ternária recursiva.
+
+$<$ Implementa uma busca ternária recursiva em um vetor de números inteiros.
+
+~\newline
+ $\ast$
+\begin{DoxyParams}{Parameters}
+{\em primeiro} & Ponteiro para o primeiro elemento no intervalo.  $\ast$\\
+\hline
+{\em último} & Ponteiro após o último elemento válido no intervalo.  $\ast$\\
+\hline
+{\em value} & O valor alvo que procuramos dentro do intervalo.  $\ast$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um ponteiro para o valor alvo dentro do intervalo; ou o último, caso o valor não esteja no intervalo. 
+\end{DoxyReturn}
