@@ -37,4 +37,4 @@ fibonacci_s.o: $(HEADER)
 	$(CC) $(CPPFLAGS) -c $(SRC_DIR)fibonacci_s.cpp
 
 clean:
-	rm -f $(BIN_DIR)*.o $(PROG)
+	rm -f $(BIN_DIR)*.o $(PROG) logs/*
