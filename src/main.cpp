@@ -10,8 +10,13 @@ std::vector<int> preenche_vetor(std::vector<int> A){
     return A;
 }
 
-int main(){ /**<Função Main*/
-    
+int main(int argc, char *argv[]){ /**<Função Main*/
+    int num_amostras;
+    int amostras = 25;
+    if(argc > 1 && argc < 3){
+         num_amostras = atoi(argv[1]);
+         amostras = num_amostras;
+    }
     int* (*fp_array[])(int*, int*, int*, int) = {linear_s_i, binary_s_i, binary_s_r, ternary_s_i, ternary_s_r, jump_s, fibonacci_s};
     std::vector<int> A; // Data container.
     //int targets[] = { 0,1, 2, 3, 4, 5, 6, 7, 8, 9 , 10, 3, 59, -6}; // Target values for testing.
@@ -23,10 +28,8 @@ int main(){ /**<Função Main*/
     int * begin = &(*A.begin());
     /**< ponteiro que aponta pro ultimo enderenço de memória de A*/
     int * end = begin + 1000000;
-
-    
+ 
     /**<Executa várias buscar no vetor de dados.*/
-
     std::ofstream myfile;
     std::stringstream name;
     for(int i=0; i<7; i++){
@@ -34,7 +37,7 @@ int main(){ /**<Função Main*/
         myfile.open(name.str());
         myfile << "Size,Time\n";
         //myfile << ">> RUNING FUNCTION "<< i << " \n";
-        for( auto j(0); j < 10; j++ ){
+        for( auto j(0); j < amostras; j++ ){
 
           auto aux = std::chrono::steady_clock::now();
           auto media = aux -aux;
