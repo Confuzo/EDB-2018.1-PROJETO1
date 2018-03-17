@@ -27,6 +27,7 @@ int main(){
     for(int i=0; i<7; i++){
         name << "logs/logFUNCTION"<<i<<".csv";
         myfile.open(name.str());
+        myfile << "Size,Time\n";
         //myfile << ">> RUNING FUNCTION "<< i << " \n";
         for( auto j(0); j < 10; j++ ){
 
